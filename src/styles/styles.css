@@ -7,6 +7,7 @@ body {
     top:0;
     position:absolute;
     transition:0.5s ease;
+    z-index:1000;
 }
 
 .hackclublogo:hover {
