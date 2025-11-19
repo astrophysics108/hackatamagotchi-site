@@ -1,0 +1,29 @@
+<style>
+    .container {
+        display:block;
+        min-height: inherit;
+        position:relative;
+        padding: 2em;
+        margin: 2em;
+        border-radius: 20px;
+        background-color:rgb(122, 139, 236);
+    }
+
+    .container :global(p) {
+        color: #ffffff;
+        font-size: large;
+        font-family: "Rubik", sans-serif;
+    }
+
+    .container :global(.step) {
+        position: absolute;
+        top: -20px;
+        left: -20px;
+        width:4em;
+        transform: rotate(-45deg);
+    }
+</style>
+
+<div class="container">
+    <slot />
+</div>

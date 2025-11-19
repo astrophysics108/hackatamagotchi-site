@@ -2,15 +2,22 @@
 import { Image } from "astro:assets";
 import HackClub from "./public/hackclub.svg";
 import TopDecor from "./public/hero.png";
-import Logo from "./public/logo.svg";
+import Logo from "./public/logo.png";
 import "../styles/styles.css";
 import Instructions from "../components/instructions.astro";
+import Card from "../components/instructions-card.astro";
+import StepNum from "../../public/circle.png";
 ---
 
 <html>
+	<head>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+	</head>
 	<body>
 		<header>
-			<main class="container">
+			<main class="containermain">
 				<Image alt="" src={TopDecor} alt="topdecor" class="top-decor"/>
 				<a class="hackclublogo" href="https://hackclub.com">
 					<img src={HackClub.src}>
@@ -19,22 +26,33 @@ import Instructions from "../components/instructions.astro";
 					<Image alt="" src={Logo} alt="Logo" class="logo" />
 				</div>
 				<h3>Code a Tamagotchi, get one shipped to you!</h3>
+
+				<div class="submit">
+					<a href="/submit">
+					<h3>Submit your project</h3>
+				</a>
+				</div>
+				
 			</main>
 		</header>
-
 		<Instructions>
-			<div class="container">
-				<p>dfsknflsnj
-					fksdjfnks
-					jndfkajlk
-					jnsajsdfb
-					lkajsdfkl
-					anfksdjns
-					dlknfalkjsd
-					fnklajnfd</p>
-			</div>
+					<Card>
+						<p>Hello!</p>
+						<img class="step" src={StepNum.src}>
+					</Card>
+					<Card>
+						<p>Hello!</p>
+						<img class="step" src={StepNum.src}>
+					</Card>
+					<Card>
+						<p>Hello!</p>
+						<img class="step" src={StepNum.src}>
+					</Card>
+					<Card>
+						<p>Hello!</p>
+						<img class="step" src={StepNum.src}>
+					</Card>
 		</Instructions>
-		
 	</body>
 </html>
 
