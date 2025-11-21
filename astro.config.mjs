@@ -2,5 +2,5 @@ import { defineConfig } from 'astro/config'
 
 export default defineConfig({
   site: 'https://astrophysics108.github.io',
-  base: "/hackatamagotchi-site",
+  base: "/hackagotchi-site",
 })
